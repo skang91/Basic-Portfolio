@@ -6,36 +6,46 @@
 
 .topnav {
     overflow: hidden;
+    /* position: absolute; */
     top: 0;
+    left: 0;
     width: 100%;
     background:#ffffff;
-    padding: 0;
-    border: 1px solid #cccccc;
+    border-bottom: 3px solid #666666;
 }
 
 body{
-    background: #cccccc;
+    background: url(../images/blue-snow.png);
 }
 
 header {
     float: left;
-    margin-left: 375px;
+    margin-left: 400px;
+    width: 15%;
     text-align: center;
     position: relative;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background: #4aaaa5;
-    padding: 3px;
 }
-h1 {
+header h1 {
     color: #ffffff;
-    font-size: 30px;
+
 }
 nav {
     float: right;
+    text-align: center;
+    margin-right: 400px;
+    padding: 10px;
     background: #ffffff;
-    width: 33%;
 }
 
+nav a {
+    text-decoration: none;
+    border-right: 1px solid #777777;
+}
+nav a:last-child {
+    border: none;
+}
 
 section {
     clear: both;
@@ -43,12 +53,27 @@ section {
     background: #ffffff;
     text-align: left;
     margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
-h2 {
+section h2 {
     color: #4aaaa5;
 }
 
+section img {
+    float: left;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
 footer {
     text-align: center;
+    background: #666666;
+    border-top: 8px solid #4aaaa5;
 }
