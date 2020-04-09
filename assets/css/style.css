@@ -6,11 +6,12 @@
 
 .topnav {
     overflow: hidden;
-    /* position: absolute; */
+    /*position: absolute;*/
+    /*-- if i do this the main section get hidden*/
     top: 0;
     left: 0;
     width: 100%;
-    background:#ffffff;
+    background-color:#ffffff;
     border-bottom: 3px solid #666666;
 }
 
@@ -39,12 +40,11 @@ nav {
     background: #ffffff;
 }
 
+/* need border between the text*/
+/*I need to put in the middle*/
 nav a {
     text-decoration: none;
-    border-right: 1px solid #777777;
-}
-nav a:last-child {
-    border: none;
+    padding:10px;
 }
 
 section {
@@ -60,12 +60,19 @@ section {
 
 section h2 {
     color: #4aaaa5;
+    border-bottom: 3px solid #cccccc;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 section img {
     float: left;
+    margin-right: 20px;
 }
 
+section p {
+    line-height: 2;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -77,3 +84,26 @@ footer {
     background: #666666;
     border-top: 8px solid #4aaaa5;
 }
+
+
+/*contact.html*/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+button[type=button] {
+    background: #4aaaa5;
+    color: white;
+    font-size: 15px;
+    padding: 10px 25px;
+    border: none;
+}
+
+
+/*portfolio.html*/
+
