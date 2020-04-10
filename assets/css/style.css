@@ -7,7 +7,7 @@
 .topnav {
     overflow: hidden;
     /*position: absolute;*/
-    /*-- if i do this the main section get hidden*/
+    /*-- if i do this the main section is getting hidden*/
     top: 0;
     left: 0;
     width: 100%;
@@ -24,13 +24,11 @@ header {
     margin-left: 400px;
     width: 15%;
     text-align: center;
-    position: relative;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background: #4aaaa5;
 }
 header h1 {
     color: #ffffff;
-
 }
 nav {
     float: right;
@@ -39,13 +37,12 @@ nav {
     padding: 10px;
     background: #ffffff;
 }
-
-/* need border between the text*/
-/*I need to put in the middle*/
+/* need border between the text, need to put in the middle*/
 nav a {
     text-decoration: none;
     padding:10px;
 }
+
 
 section {
     clear: both;
@@ -57,19 +54,16 @@ section {
     margin-top: 20px;
     margin-bottom: 20px;
 }
-
 section h2 {
     color: #4aaaa5;
     border-bottom: 3px solid #cccccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-
 section img {
     float: left;
     margin-right: 20px;
 }
-
 section p {
     line-height: 2;
 }
@@ -78,7 +72,8 @@ section p {
     clear: both;
     display: table;
   }
-  
+
+
 footer {
     text-align: center;
     background: #666666;
@@ -106,4 +101,15 @@ button[type=button] {
 
 
 /*portfolio.html*/
+.img-box {
+    float: left;
+    padding: 8px;
+    position: relative;
+}
+
+.img-box:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
