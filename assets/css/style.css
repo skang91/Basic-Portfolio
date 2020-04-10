@@ -6,23 +6,24 @@
 
 .topnav {
     overflow: hidden;
-    /*position: absolute;*/
-    /*-- if i do this the main section is getting hidden*/
-    top: 0;
-    left: 0;
     width: 100%;
     background-color:#ffffff;
-    border-bottom: 3px solid #666666;
+    border-bottom: 2px solid #cccccc;
 }
 
+.navcontainer {
+    margin: 0 auto;
+    width: 960px;
+}
 body{
     background: url(../images/blue-snow.png);
+    margin: 0;
 }
 
 header {
     float: left;
-    margin-left: 400px;
-    width: 15%;
+    display: inline-block;
+    padding: 0px 30px;
     text-align: center;
     font-family: 'Georgia', Times, 'Times New Roman', serif;
     background: #4aaaa5;
@@ -31,16 +32,17 @@ header h1 {
     color: #ffffff;
 }
 nav {
+    display: inline-block;
     float: right;
     text-align: center;
-    margin-right: 400px;
-    padding: 10px;
+    padding: 10px 0px;
+    margin: 20px 0px;
     background: #ffffff;
 }
-/* need border between the text, need to put in the middle*/
 nav a {
     text-decoration: none;
     padding:10px;
+    color: #666666;
 }
 
 
@@ -52,7 +54,7 @@ section {
     margin: 0 auto;
     padding: 20px;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 100px;
 }
 section h2 {
     color: #4aaaa5;
@@ -60,11 +62,11 @@ section h2 {
     margin-bottom: 20px;
     padding-bottom: 20px;
 }
-section img {
+.clearfix img {
     float: left;
     margin-right: 20px;
 }
-section p {
+.clearfix p {
     line-height: 2;
 }
 .clearfix::after {
@@ -74,12 +76,15 @@ section p {
   }
 
 
-footer {
+.footer {
     text-align: center;
+    width: 100%;
     background: #666666;
     border-top: 8px solid #4aaaa5;
+    color: #cccccc;
+    height: 70px;
+    padding-top: 40px;
 }
-
 
 /*contact.html*/
 
@@ -102,14 +107,18 @@ button[type=button] {
 
 /*portfolio.html*/
 .img-box {
-    float: left;
-    padding: 8px;
     position: relative;
+    display: inline-block;
+    margin: 15px;
 }
 
-.img-box:after {
-    content: "";
-    display: table;
-    clear: both;
+.img-name {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    color: white;
+    background: #4aaaa5;
+    box-sizing: border-box;
+    padding: 15px;
+    text-align: center;
 }
-
